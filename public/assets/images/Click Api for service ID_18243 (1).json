@@ -1,0 +1,472 @@
+{
+            	"variables": [],
+            	"info":{
+            	    "name":"Click API for service ID 18243",
+            	    "_postman_id": "18243",
+            	    "description": "",
+            	    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+            	},
+            	"item": [
+            	     
+{
+                        "name": "Сценарий 1",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=prepare",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Ошибка в подписе при подготовке платежа\nОжидаемая код ошибки -1 \nPrepare запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"0","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"84bde13caa55fe3fb68f7afc663be7ce","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Ошибка в подписе при подготовке платежа\nОжидаемая код ошибки -1 \nPrepare запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 2",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=prepare",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"0","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"23271c6d49683cdb0d17ddf5368adc62","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 3",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Ошибка в подписе при подтверждении платежа \nОжидаемая код ошибки -1 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"38e46c75d7d386a99354d3d2ceb351ad","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Ошибка в подписе при подтверждении платежа \nОжидаемая код ошибки -1 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 4",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Ошибка в сумме при подтверждение платежа \nОжидаемая код ошибки -2 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"300","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Ошибка в сумме при подтверждение платежа \nОжидаемая код ошибки -2 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 5",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Успешное подтверждение платежа \nОжидаемая код ошибки 0 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Успешное подтверждение платежа \nОжидаемая код ошибки 0 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 6",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Повторное подтверждение ранее успешного платежа \nОжидаемая код ошибки -4 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Повторное подтверждение ранее успешного платежа \nОжидаемая код ошибки -4 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 7",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Попытка отмены ранее успешного платежа \nОжидаемая код ошибки -4 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Попытка отмены ранее успешного платежа \nОжидаемая код ошибки -4 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 8",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=prepare",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Не найдет пользователь/заказ \nОжидаемая код ошибки -5 \nPrepare запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"122222222222222","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"0","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"23271c6d49683cdb0d17ddf5368adc62","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Не найдет пользователь/заказ \nОжидаемая код ошибки -5 \nPrepare запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 9",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=prepare",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"0","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"23271c6d49683cdb0d17ddf5368adc62","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 10",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Не найдена транзакция (проверка параметра merchant_prepare_id) \nОжидаемая код ошибки -6 \nComplete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Не найдена транзакция (проверка параметра merchant_prepare_id) \nОжидаемая код ошибки -6 \nComplete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 11",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Успешное подтверждение платежа, Complete \nОжидаемая код ошибки 0 \nCompete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Успешное подтверждение платежа, Complete \nОжидаемая код ошибки 0 \nCompete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 12",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=prepare",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"0","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"23271c6d49683cdb0d17ddf5368adc62","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Успешная подготовка платежа \nОжидаемая код ошибки 0 \nPrepare запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 13",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Отмена платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"-5017","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Отмена платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 14",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Повторная отмена платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"-5017","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Повторная отмена платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                },
+                                "response": []
+                            },
+{
+                        "name": "Сценарий 15",
+            	        "request": {
+                            "url": "https://grills.uz/bitrix/tools/sale_ps_result.php?click_uz=complete",
+                            "method": "POST",
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/x-www-form-urlencoded",
+                                    "description": "Повторное подтверждение ранее отменного платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                }
+                            ],
+                            "body": {
+					            "mode": "urlencoded",
+                                "urlencoded": [{"value":"134","description":"","type":"text","key":"click_trans_id"},
+{"value":"18243","description":"","type":"text","key":"service_id"},
+{"value":"1344","description":"","type":"text","key":"click_paydoc_id"},
+{"value":"47","description":"","type":"text","key":"merchant_trans_id"},
+{"value":"1000","description":"","type":"text","key":"amount"},
+{"value":"1","description":"","type":"text","key":"action"},
+{"value":"2021-07-01 14:54","description":"","type":"text","key":"sign_time"},
+{"value":"47","description":"","type":"text","key":"merchant_prepare_id"},
+{"value":"0","description":"","type":"text","key":"error"},
+{"value":"Success","description":"","type":"text","key":"error_note"},
+{"value":"ded01c04bead48b9ffe940a067607b47","description":"","type":"text","key":"sign_string"}
+]
+                                    },
+                                "description": "Повторное подтверждение ранее отменного платежа \nОжидаемая код ошибки -9 \nCompete запрос"
+                                },
+                                "response": []
+                            }   
+            	]
+            }
